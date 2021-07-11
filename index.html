@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<title>Sparks Foundation</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <nav id="navbar">
+            <h1 class="headText">Sparks Foundation</h1>
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="wrapper">
+            <div class="intro">
+                <h1 class ="mission"> Join us in our mission to <span class="highlightedtext">SAVE LIVES,</span></h1>
+                <p>
+                    Help provide relief and support to the people fighting Covid-19.
+                </p>
+                <a id="donate" href="https://pages.razorpay.com/pl_HXEiNAN7a0Jb3K/view">
+                    Donate
+                </a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="about">
+        <div class="wrapper">
+            <h1>ABOUT US</h1>
+            <div class="about-left">
+                <img src="images\5299.jpg" alt="img">
+            </div>
+    
+            <div class="about-right">
+                <h1>Help us out by giving back to this great cause.</h1>
+                <p>
+                    Your small contribution will go a long way in providing life-saving care to those who cannot access it and will help reduce the risk of infection, disease and death. It’s a crisis of epic proportions and we’re in this together. Remember, no one’s safe until we’re all safe.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3>Sparks Foundation ©2021</h3>
+    </footer>
+    </body>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("navbar");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+    </html>
